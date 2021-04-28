@@ -1,5 +1,6 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
+import com.biat.MyBoutique.domain.enumeration.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;

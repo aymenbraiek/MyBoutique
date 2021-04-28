@@ -1,5 +1,6 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
+import com.biat.MyBoutique.domain.enumeration.CartStatus;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;

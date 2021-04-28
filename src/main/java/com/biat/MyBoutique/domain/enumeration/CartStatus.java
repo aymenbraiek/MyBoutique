@@ -1,4 +1,4 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain.enumeration;
 
 public enum CartStatus {
 

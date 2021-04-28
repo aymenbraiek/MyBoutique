@@ -1,6 +1,6 @@
 package com.biat.MyBoutique.repository;
 
-import com.biat.MyBoutique.Model.Customer;
+import com.biat.MyBoutique.domain.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

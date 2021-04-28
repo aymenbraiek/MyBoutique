@@ -1,5 +1,6 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
+import com.biat.MyBoutique.domain.enumeration.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

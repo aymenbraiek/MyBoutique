@@ -1,4 +1,4 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -31,4 +31,8 @@ public class Customer extends AbstractEntity{
     @OneToMany(mappedBy = "customer")
     @JsonIgnore
     private Set<Cart> carts;
+    @Column(name = "enabled", nullable = false)
+    private Boolean enabled;
+
+
 }

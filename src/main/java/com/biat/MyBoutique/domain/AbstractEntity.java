@@ -1,4 +1,4 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;

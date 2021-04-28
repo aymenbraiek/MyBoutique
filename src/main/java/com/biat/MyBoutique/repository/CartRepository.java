@@ -1,7 +1,7 @@
 package com.biat.MyBoutique.repository;
 
-import com.biat.MyBoutique.Model.Cart;
-import com.biat.MyBoutique.Model.CartStatus;
+import com.biat.MyBoutique.domain.Cart;
+import com.biat.MyBoutique.domain.enumeration.CartStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

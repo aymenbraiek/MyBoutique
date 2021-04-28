@@ -1,5 +1,6 @@
-package com.biat.MyBoutique.Model;
+package com.biat.MyBoutique.domain;
 
+import com.biat.MyBoutique.domain.enumeration.ProductStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -39,4 +40,8 @@ public class Product extends AbstractEntity {
     private Set<Review> reviews = new HashSet<>();
     @ManyToOne
     private Category category;
+
+    public Product(String name, String description, BigDecimal price, Integer quantity, ProductStatus valueOf, Integer salesCounter, Category orElse) {
+        super();
+    }
 }
