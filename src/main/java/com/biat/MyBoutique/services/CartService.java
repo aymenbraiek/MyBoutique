@@ -40,6 +40,7 @@ public class CartService {
 
     public List<CartDto> findAll() {
         log.debug("Request to get all Carts");
+
         return this.cartRepository.findAll()
                 .stream()
                 .map(CartService::mapToDto)

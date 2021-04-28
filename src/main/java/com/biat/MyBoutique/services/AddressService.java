@@ -4,9 +4,11 @@ import com.biat.MyBoutique.web.dto.AddressDto;
 import com.biat.MyBoutique.domain.Address;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.stereotype.Service;
 
 @Data
 @AllArgsConstructor
+@Service
 public class AddressService {
 
     public static AddressDto mapToDto(Address address) {
