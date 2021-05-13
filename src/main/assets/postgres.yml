@@ -1,9 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgresql
+  name: postgres
   namespace: default
 spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
   replicas: 1
   selector:
     matchLabels:
@@ -11,14 +16,14 @@ spec:
   template:
     metadata:
       labels:
-        app: postgresql
+        app: postgres
     spec:
       volumes:
         - name: data
           emptyDir: {}
       containers:
         - name: postgres
-          image: postgres:9.6.5
+          image: postgres:10
           env:
             - name: POSTGRES_USER
               valueFrom:
