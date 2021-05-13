@@ -26,4 +26,5 @@ public class OrderItem extends AbstractEntity {
     private Product product;
     @ManyToOne
     private Order order;
+
 }

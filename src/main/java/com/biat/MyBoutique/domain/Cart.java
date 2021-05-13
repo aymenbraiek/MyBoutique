@@ -1,13 +1,14 @@
 package com.biat.MyBoutique.domain;
 
 import com.biat.MyBoutique.domain.enumeration.CartStatus;
-import com.sun.istack.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 /*
 1. This Lombok annotation generates getters for all fields, a useful toString method, and
 hashCode and equals implementations that check all non-transient fields. Will also generate
