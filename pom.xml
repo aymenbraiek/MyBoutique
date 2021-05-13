@@ -46,7 +46,11 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>spring-cloud-starter-kubernetes</artifactId>
+			<version>0.1.6</version>
+		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -89,6 +93,21 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>fabric8-maven-plugin</artifactId>
+				<version>3.5.41</version>
+
+			<executions>
+			<execution>
+			<id>fmp</id>
+			<goals>
+				<goal>resource</goal>
+				<goal>build</goal>
+			</goals>
+			</execution>
+			</executions>
 			</plugin>
 		</plugins>
 	</build>
