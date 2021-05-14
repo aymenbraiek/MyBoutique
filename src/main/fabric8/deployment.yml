@@ -18,7 +18,7 @@ spec:
           image: aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
           imagePullPolicy: Always
           imagePullSecrets:
-            - name: secret1
+          - name: secret1
           env:
             - name: POSTGRES_SERVICE
               valueFrom:
