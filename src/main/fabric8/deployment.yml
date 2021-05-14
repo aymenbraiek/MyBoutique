@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myboutique
-          image: aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
+          image: docker.io/aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
           imagePullPolicy: Always
           ports:
             - name: myboutique
