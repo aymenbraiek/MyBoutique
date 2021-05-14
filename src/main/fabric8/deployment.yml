@@ -1,13 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ${project.artifactId}
+  name: myboutique
   namespace: default
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myboutique
   template:
     spec:
       containers:
-        - name: ${project.artifactId}
+        - name: myboutique
           env:
             - name: POSTGRES_SERVICE
               valueFrom:
