@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myboutique
-          image: registry.hub.docker.com/aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
+          image: aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
           imagePullPolicy: Always
           ports:
             - name: myboutique
