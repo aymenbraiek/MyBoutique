@@ -15,10 +15,14 @@ spec:
     spec:
       containers:
         - name: myboutique
-          image: aymenbraiek2019/myboutique:0.0.1-SNAPSHOT
+          image: registry.hub.docker.com/aymenbraiek2018/myboutique:0.0.1-SNAPSHOT
           imagePullPolicy: Always
-          imagePullSecrets:
-          - name: secret1
+          ports:
+            - name: myboutique
+              containerPort: 9992
+              protocol: TCP
+      imagePullSecrets:
+        - name: secret1
           env:
             - name: POSTGRES_SERVICE
               valueFrom:
