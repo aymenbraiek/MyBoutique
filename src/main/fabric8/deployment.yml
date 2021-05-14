@@ -9,10 +9,14 @@ spec:
     matchLabels:
       app: myboutique
   template:
+    metadata:
+      labels:
+        app: myboutique
     spec:
       containers:
-        - name: nginx-container
-          image: nginx
+        - name: myboutique
+
+          imagePullPolicy: Always
           env:
             - name: POSTGRES_SERVICE
               valueFrom:
@@ -34,3 +38,16 @@ spec:
                 secretKeyRef:
                   name: db-security
                   key: db.user.password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myboutique-lb
+  labels:
+    app: myboutique
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+  selector:
+    app: myboutique
