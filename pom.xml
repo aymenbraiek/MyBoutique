@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.biat</groupId>
-	<artifactId>MyBoutique</artifactId>
+	<artifactId>myboutique</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MyBoutique</name>
 	<description>playing with java-micro-service on k8s and ocp</description>
