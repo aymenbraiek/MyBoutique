@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myboutique
-
+          image: myboutique:0.0.1-SNAPSHOT
           imagePullPolicy: Always
           env:
             - name: POSTGRES_SERVICE
@@ -48,6 +48,6 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 8080
+    - port: 9992
   selector:
     app: myboutique
